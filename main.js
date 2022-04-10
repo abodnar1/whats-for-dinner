@@ -64,7 +64,7 @@ letsCookButton.addEventListener("click", generateRandomDish);
 var randomSide = sides[Math.floor(Math.random() * sides.length)];
 var randomMainDish = mainDishes[Math.floor(Math.random() * mainDishes.length)];
 var randomDessert = desserts[Math.floor(Math.random() * desserts.length)];
-var randomEntireMeal = `${randomSide}, ${randomMainDish}, and ${randomDessert}!`;
+var randomEntireMeal = `${randomMainDish} with a side of ${randomSide} and ${randomDessert} for dessert!`;
 
 
 function generateRandomDish() {
