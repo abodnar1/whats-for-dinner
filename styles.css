@@ -8,6 +8,7 @@ red - #ee5253
 
 */
 
+
 body {
   background-image: url("./assets/burger-friends.jpg");
   background-size: cover;
@@ -47,6 +48,7 @@ h1 {
 }
 
 
+/* ~~~~~User Input Form/Selection Box~~~~~ */
 h2 {
   font-size: 27px;
   margin-bottom: 0;
@@ -91,6 +93,18 @@ main {
 }
 
 
+/* ~~~~~Output Box~~~~~ */
+h3 {
+  font-style: italic;
+}
+
+
+img {
+  width: 100px;
+  height: 200px;
+}
+
+
 .cook-pot-box {
   display: flex;
   align-items: center;
@@ -100,12 +114,6 @@ main {
   height: 260px;
   padding: 50px;
   margin: 50px;
-}
-
-
-img {
-  width: 100px;
-  height: 200px;
 }
 
 
@@ -119,11 +127,6 @@ img {
   height: 260px;
   padding: 50px;
   margin: 50px;
-}
-
-
-h3 {
-  font-style: italic;
 }
 
 
