@@ -51,6 +51,7 @@ var desserts = [
 var sideInput = document.querySelector("#side");
 var mainDishInput = document.querySelector("#main-dish");
 var dessertInput = document.querySelector("#dessert");
+var entireMealInput = document.querySelector("#entire-meal");
 var letsCookButton = document.querySelector(".lets-cook-button");
 var cookPotSection = document.querySelector(".cook-pot-box");
 var youShouldMakeSection = document.querySelector(".you-should-make-box");
@@ -63,7 +64,7 @@ letsCookButton.addEventListener("click", generateRandomDish);
 var randomSide = sides[Math.floor(Math.random() * sides.length)];
 var randomMainDish = mainDishes[Math.floor(Math.random() * mainDishes.length)];
 var randomDessert = desserts[Math.floor(Math.random() * desserts.length)];
-
+var randomEntireMeal = `${randomSide}, ${randomMainDish}, and ${randomDessert}!`;
 
 
 function generateRandomDish() {
@@ -76,6 +77,8 @@ function generateRandomDish() {
     output = randomMainDish + "!";
   } else if (dessertInput.checked === true) {
     output = randomDessert + "!";
+  } else if (entireMealInput.checked === true) {
+    output = randomEntireMeal;
   } else {
     output = `No selection made. Please try again.`
   }
