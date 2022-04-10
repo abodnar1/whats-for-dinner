@@ -1,23 +1,34 @@
 # What's for Dinner?
 
-## Overview
+## Introduction
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+What's for Dinner? is a meal generator to help you choose what you should cook. Simply select the course you desire and let the generator choose for you!
+![Screen Shot 2022-04-10 at 7 03 04 PM](https://user-images.githubusercontent.com/99693359/162643738-e918d15e-c2de-4a44-bee2-0fae221d987c.png)
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## Technologies Used
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+- HTML
+- CSS
+- JavaScript
 
-## Learning Goals
+## Deployed Link
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+Experience the generator for yourself [here](https://abodnar1.github.io/whats-for-dinner/).
 
-## Setup
+## Instructions for Local Viewing
 
 - Fork this project to your own Github account
 - Clone the repository to your local machine
 - `cd` into the project
-- Read this README thoroughly, then begin working!
+- `open index.html` to view in your browser.
+
+## Ideas for Future Features
+
+- Add functionality so the user can save meal recommendations and access them for later meal prep.
+- Allow the user to add and save their own recipes.
+- Add functionality so that once a dish is generated it provides links to recipes found on the web.
+
+## Sources
+- [MDN](https://developer.mozilla.org/en-US/)
+- [Turing Mod1 Lessons](https://frontend.turing.edu/lessons/)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
