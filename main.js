@@ -47,7 +47,6 @@ var desserts = [
 ];
 
 
-// queryselectors:
 var sideInput = document.querySelector("#side");
 var mainDishInput = document.querySelector("#main-dish");
 var dessertInput = document.querySelector("#dessert");
@@ -56,11 +55,11 @@ var letsCookButton = document.querySelector(".lets-cook-button");
 var cookPotSection = document.querySelector(".cook-pot-box");
 var youShouldMakeSection = document.querySelector(".you-should-make-box");
 var displayDish = document.querySelector(".display-random-dish");
+var addRecipeButton = document.querySelector(".add-recipe-button");
 
-// event listeners
 letsCookButton.addEventListener("click", generateRandomDish);
+addRecipeButton.addEventListener("click", addRecipeAlert);
 
-// variables storing a random dish from their respective course arrays:
 var randomSide = sides[Math.floor(Math.random() * sides.length)];
 var randomMainDish = mainDishes[Math.floor(Math.random() * mainDishes.length)];
 var randomDessert = desserts[Math.floor(Math.random() * desserts.length)];
@@ -71,13 +70,13 @@ function generateRandomDish() {
   var output = "";
 
   event.preventDefault();
-  if (sideInput.checked === true) {
+  if (sideInput.checked) {
     output = randomSide + "!";
-  } else if (mainDishInput.checked === true) {
+  } else if (mainDishInput.checked) {
     output = randomMainDish + "!";
-  } else if (dessertInput.checked === true) {
+  } else if (dessertInput.checked) {
     output = randomDessert + "!";
-  } else if (entireMealInput.checked === true) {
+  } else if (entireMealInput.checked) {
     output = randomEntireMeal;
   } else {
     output = `No selection made. Please try again.`
@@ -96,4 +95,8 @@ function displayOutput(output) {
 function hideCookPot() {
   cookPotSection.classList.add("hidden");
   youShouldMakeSection.classList.remove("hidden");
+};
+
+function addRecipeAlert() {
+  window.alert("Oops! Looks like that's an option at this time. Please try again.");
 };
