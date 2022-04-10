@@ -91,14 +91,13 @@ main {
 }
 
 
-.you-should-make-box {
+.cook-pot-box {
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(225, 225, 225, .9);
   width: 360px;
   height: 260px;
-  text-align: left;
   padding: 50px;
   margin: 50px;
 }
@@ -107,4 +106,35 @@ main {
 img {
   width: 100px;
   height: 200px;
+}
+
+
+.you-should-make-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(225, 225, 225, .9);
+  width: 360px;
+  height: 260px;
+  padding: 50px;
+  margin: 50px;
+}
+
+
+h3 {
+  font-style: italic;
+  margin: 0;
+}
+
+
+.display-random-dish {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+
+.hidden {
+  display: none!important;
 }

@@ -15,23 +15,30 @@
   <main>
     <form class="selection-box">
       <h2>What are you looking for?<span>*</span></h2>
-        <div><input type="radio" id="side" name="radio-button" value="side">
+        <div>
+          <input type="radio" name="course-selection" id="side" value="side">
           <label for="side">Side</label>
         </div>
-        <div><input type="radio" id="main-dish" name="radio-button" value="main-dish">
+        <div>
+          <input type="radio" name="course-selection" id="main-dish" value="main-dish">
           <label for="main-dish">Main Dish</label>
         </div>
-        <div><input type="radio" id="dessert" name="radio-button" value="dessert">
+        <div>
+          <input type="radio" name="course-selection" id="dessert" value="dessert">
           <label for="dessert">Dessert</label>
         </div>
-        <div><input type="radio" id="entire-meal" name="radio-button" value="entire-meal">
+        <div>
+          <input type="radio" name="course-selection" id="entire-meal" value="entire-meal">
           <label for="entire-meal">Entire Meal</label>
         </div>
       <button class="lets-cook-button">LET'S COOK!</button>
     </form>
-    <section class="you-should-make-box">
-      <h3 class="you-should-make hidden"></h3>
+    <section class="cook-pot-box">
       <img class="cook-pot-pic" src="./assets/cookpot.svg"></img>
+    </section>
+    <section class="you-should-make-box hidden">
+      <h3>You should make:</h3>
+      <p class="display-random-dish"></p>
     </section>
   </main>
 </body>
